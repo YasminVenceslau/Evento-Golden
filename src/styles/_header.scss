@@ -1,0 +1,66 @@
+@use 'variables' as *;
+.ano{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+        &__separa{
+            display: inline;
+            
+            p{
+                font-size: 100px;
+                font-weight: 300;
+            }
+            
+            
+        }
+        @media (max-width:764px){
+            top:20px;
+            left:20px ;
+        
+            p{
+                font-size: 30px;
+                padding-left:3px;
+            }
+        }
+        @media (min-width:764px) and (max-width:1024px){
+            left: 15px;
+            top: 10px;
+            p{
+                font-size: 70px;
+            }
+        }
+}
+.header{
+    text-align: right;
+
+    .container{
+        
+        padding: 60px 0 20px;
+        margin-right: 100px;
+        h1{
+            font-size: 50px;
+            
+        }
+
+        @media (max-width:764px){
+            margin-right: 10px;
+            padding: 20px 0 10px 0;
+
+            h1{
+                font-size: 16px;
+                padding-left: 20px;
+            }
+        }
+
+        @media (min-width:764px) and (max-width:1024px){
+            
+            margin-right: 10px;
+            padding: 20px 0 10px 0;
+
+            h1{
+                font-size: 30px;
+                
+            }
+        }
+    }
+}

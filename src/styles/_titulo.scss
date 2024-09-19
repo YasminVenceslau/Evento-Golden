@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+.titulo{
+    padding-top:5%;
+    .titulo__text{
+    text-transform: uppercase;
+    padding-left: 35%;
+    margin: -5px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 130px;
+    
+    }
+
+    @media (max-width:764px){
+        padding-top: 15%;
+        .titulo__text{
+            font-size: 40px;
+            padding-left: 25%;
+        }
+    }
+
+    @media (min-width:764px) and (max-width:1024px){
+        padding-top: 10%;
+        .titulo__text{
+            font-size: 90px;
+            padding-left: 25%;
+        }
+    }
+
+}
+    
